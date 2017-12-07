@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物流程_礼无忧网</title>  
+    <!--[if lt IE 8]>
+        <script>
+        setTimeout(function(){  
+            window.location.href = './upgrade.html';  
+        },10);
+        </script>
+    <![endif]-->  
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/favicon.ico" >
+    <link rel="stylesheet" href="./css/step.css">
+</head>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="center clearfix">
+            <div class="logo fl">
+                <a href="##">礼无忧首页</a>
+            </div>
+            <span class="dib">我的购物车</span>
+            <div class="cart-hd fr">
+                <span class="f-b28850">US00005FF21</span>
+                <a href="##" class="m-l">个人中心</a>
+                <a href="##" class="m-l">我的订单</a>
+                <a href="##" class="m-l">浏览历史</a>
+                <a href="##" class="m-l">退出登录</a>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 中间内容 -->
+    <div class="flow">
+        <div class="flow-curr clearfix">
+            <div class="center">
+                <!-- 左 -->
+                <div class="fl">
+                    <a href="##">首页</a>
+                    <span class="sp">/</span>购物车
+                </div>
+                <!-- 右 -->
+                <a href="##" class="ct-a fr">QQ在线交谈</a>
+                <span class="ct-sp fr">服务热线：400-611-2156 (8:00－24:00)</span>
+            </div>
+        </div>
+        <div class="fb-center">
+            <!-- 商品信息 -->
+            <div class="address clearfix">
+                <span class="add-sp fl">收货地址</span>
+                <div class="add-d fl" id="address_list">
+            <!-- '<a href="javascript:void(0)" class="add-a fl" id="info' + $id + '" data-id="' + $id + '">' +
+                    '<p class="clearfix">' +
+                    '<span class="fl">' + $name + '</span>' +
+                    '<span class="fr">' + $number + '</span>' +
+                    '</p>' +
+                    '<p class="m-t-10 f12">' +
+                    '<span>' + $province + '</span>' + '&nbsp;' +
+                    '<span>' + $downtown + '</span>' + '&nbsp;' +
+                    '<span>' + $row + '</span>' +
+                    '<br>' +
+                    '<span>' + $site + '</span>' +
+                    '</p>' +
+                    '<p class="operate dn">' +
+                    '<em id="revise">修改</em>' +
+                    '<em id="del">删除</em>' +
+                    '</p>' +
+                '</a>'; -->
+                    <a href="javascript:void(0)" class="addnew fl">
+                        <i class="icon-bgr icon-add1"></i>新增收货地址
+                    </a>
+                </div>
+            </div>
+            <div class="cards clearfix">
+                <div class="mash dn"></div>
+                <i class="dn icon-gift"></i>
+                <span class="fl car-sp">包装与贺卡</span>
+                <!-- <input type="hiddle" id="has_pack" value="1"> -->
+                <div class="car-count fl">
+                    <a href="javascript:void(0)" id="edit_card" class="count-a">
+                        <i class="icon-bgr count-i"></i>填写贺卡</a>
+                    <span class="count-sp">作为礼物送朋友？礼无忧提供免费的包装和贺卡。</span>
+                </div>
+            </div>
+            <div class="logistics clearfix">
+                <div class="mash dn">asda </div>
+                <span class="pay-sp fl">配送选项</span>
+                <a href="javascript:void(0)">中通\圆通&nbsp;免运费</a>
+                <a href="javascript:void(0)" class="focus">顺丰快递&nbsp;<span>￥10.0</span></a>
+                <div class="log-ct" dir="shipping_list"></div>
+            </div>
+            <div class="pay-way clearfix">
+                <div class="mash dn"></div>
+                <span class="pay-sp fl">支付方式</span>
+                <a href="javascript:void(0)" class="focus">在线支付</a>
+                <a href="javascript:void(0)" id="charge">货到付款 手续费 <span>￥6.0</span></a>
+            </div>
+            <div class="goods-list clearfix">
+                <div class="mash dn"></div>
+                <p class="clearfix goods-p">
+                    <span class="goods-titel">商品清单</span>
+                    <a href="flow.html" class="goods-a fr">
+                        <i class="icon-bgr icon-arrowL"></i>返回购物车修改
+                    </a>
+                </p>
+                <div class="goods-cont">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td width="45%" class="tl">
+                                    <a href="javascript:void(0)">
+                                        <!-- <img src="./images/1.jpg" alt="" class="goods-img"> -->
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCABBAEEDAREAAhEBAxEB/8QAHAABAAMAAwEBAAAAAAAAAAAAAAQFBwMGCAIJ/8QAORAAAQMEAQIDAwYPAAAAAAAAAQIDBAAFBhEHEiEIE0FRYbIUFTE2RHIkJTNDVGJkcXSBkZKhsbP/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQYCAwQF/8QAKREBAAIBAgMIAgMAAAAAAAAAAAECAwQRBRIhBhMiMVFxgaEHYSNBYv/aAAwDAQACEQMRAD8A/fygUHDPlCFCellBUGmlLKQdb0N6oOtXflCLZ1sNvWhai+yHB0v/AEDZGu491B92XkmPe5KorFrU2Q0pe1v7Hb07Cgv7TcBdLczPDXR5qOrp6t6/nQSaBQKBQKCHkBCbJMJ/RXPhoMrzgblQT7ISfT9Y0EjAVfjVeu/4M56+6g0TDFFWNRCT+bI/oo0FpQKBQKBQQMnV02CYd/Zl/wCqDF+ak598giu8ev29MtuGC43Ogl9S0lQ/JJLrSOoDqOlqAV2G0+oRvD81y0m7ypvJqba0ZMZRZiQX1r+TlKSknSnHOjr7KKA4tKdDR2VUG1YQd4xF/cv4zQW1AoFAoFBTchR7rLwq5xbJdW4MxyGtMaY7E89LK/RRbKk9YHs2N+2t2nvhx5q2zU56xPWu813j05oiZj32cmvw6vUaLJi0ubuclomK35YvyT/VuS3htt6T0l455YyLxjcYZhGx+/8APfH9ztycbevNwya54UmzxrbHZLhdS71SnEJaQhBWXVKHSArZ1VotxLsPfrPDM1fbVbx94olVbcJ7e1n+Hi2Lb/WkifuMsfW0fpD4q5T8TvNsyzxeJPEfxiuy5dYpk2wcg4pYE3uMENJWnqaT56GntOIUg7UNFCkkAg1lg4l2Fw5Itbhua+3nE6mIifmMUzHw0xwb8jWyVnLxnByxMbxTRRWZ69fFOa23T9T8+T1/wda8wsvFdmtXIGaRsivTEdable4dlTbmpjvmK24iMlxwMA+iAtWtfSarnEM2h1Gtvk0eGcOKZ8NJvOSax6TeYrNveYha+GabX6TRxi1mo7/JE23vNK03ibTNY5a9PBWYpv525eaesy7ZXE9AoFAoFBAycbx+Z/DLP+KDz7zvxJiXM14fw3kHHod6xy7Yc/Zchsk3r6Z0SX5qXGj06PSUdQJCkqSQCCCAQFV4bvCvx14a5eM4Jwhikaw4jjdruLMW2KmvSJC3pTjjzz63XCpTzjjy1rcWteyToAAAAPR+DfViMfe5/wBFUFvQKBQKBQQ8hT1WKYN/ZHPhNBhPOeB2nkywXnj2/wAia1AyDG/m6a7bZq40hDTgeSVNOo7trTsEH3aIIJFExO07q/wj8G4/4dOPoHFWN3ifcWI0ibMkT7m+px6TJkuF11Z2T0DegEgnWtkkqJom1pvaZb3goIxaJv2L+NVGK3oFAoFAoIl972WYP2Rz4TQZHmJKbqhehoQGj3+85QSsKWVXJBUNHoXv+00Gj4R9V4n3V/GaC2oFAoFAoI90YdlW2RGZSCtyOtKQTruUkCgzbLOPM+ukxmTY4zTRRGS26JTSHUEhRII6XmyD3I+kgjXbt3DkxHj7kC2XNEq9iOppCFjy4kVLfUopIGyp9fYbJ0ANnXfQ0Q79jUB+22SPCkpAW2k9QB3raiaCfQKBQKBQKDjoFByUCgUCg//Z" alt="" class="goods-img">
+                                        <span class="overtxt">口袋喷雾</span>
+                                    </a>
+                                </td>
+                                <td width="25%"></td>
+                                <td>58.00 x 1</td>
+                                <td>有库存</td>
+                                <td>58.00</td>
+                            </tr>
+                            <tr>
+                                <td width="45%" class="tl">
+                                    <a href="javascript:void(0)">
+                                        <!-- <img src="./images/1.jpg" alt="" class="goods-img"> -->
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCABBAEEDAREAAhEBAxEB/8QAHAABAAMAAwEBAAAAAAAAAAAAAAQFBwMGCAIJ/8QAORAAAQMEAQIDAwYPAAAAAAAAAQIDBAAFBhEHEiEIE0FRYbIUFTE2RHIkJTNDVGJkcXSBkZKhsbP/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQYCAwQF/8QAKREBAAIBAgMIAgMAAAAAAAAAAAECAwQRBRIhBhMiMVFxgaEHYSNBYv/aAAwDAQACEQMRAD8A/fygUHDPlCFCellBUGmlLKQdb0N6oOtXflCLZ1sNvWhai+yHB0v/AEDZGu491B92XkmPe5KorFrU2Q0pe1v7Hb07Cgv7TcBdLczPDXR5qOrp6t6/nQSaBQKBQKCHkBCbJMJ/RXPhoMrzgblQT7ISfT9Y0EjAVfjVeu/4M56+6g0TDFFWNRCT+bI/oo0FpQKBQKBQQMnV02CYd/Zl/wCqDF+ak598giu8ev29MtuGC43Ogl9S0lQ/JJLrSOoDqOlqAV2G0+oRvD81y0m7ypvJqba0ZMZRZiQX1r+TlKSknSnHOjr7KKA4tKdDR2VUG1YQd4xF/cv4zQW1AoFAoFBTchR7rLwq5xbJdW4MxyGtMaY7E89LK/RRbKk9YHs2N+2t2nvhx5q2zU56xPWu813j05oiZj32cmvw6vUaLJi0ubuclomK35YvyT/VuS3htt6T0l455YyLxjcYZhGx+/8APfH9ztycbevNwya54UmzxrbHZLhdS71SnEJaQhBWXVKHSArZ1VotxLsPfrPDM1fbVbx94olVbcJ7e1n+Hi2Lb/WkifuMsfW0fpD4q5T8TvNsyzxeJPEfxiuy5dYpk2wcg4pYE3uMENJWnqaT56GntOIUg7UNFCkkAg1lg4l2Fw5Itbhua+3nE6mIifmMUzHw0xwb8jWyVnLxnByxMbxTRRWZ69fFOa23T9T8+T1/wda8wsvFdmtXIGaRsivTEdable4dlTbmpjvmK24iMlxwMA+iAtWtfSarnEM2h1Gtvk0eGcOKZ8NJvOSax6TeYrNveYha+GabX6TRxi1mo7/JE23vNK03ibTNY5a9PBWYpv525eaesy7ZXE9AoFAoFBAycbx+Z/DLP+KDz7zvxJiXM14fw3kHHod6xy7Yc/Zchsk3r6Z0SX5qXGj06PSUdQJCkqSQCCCAQFV4bvCvx14a5eM4Jwhikaw4jjdruLMW2KmvSJC3pTjjzz63XCpTzjjy1rcWteyToAAAAPR+DfViMfe5/wBFUFvQKBQKBQQ8hT1WKYN/ZHPhNBhPOeB2nkywXnj2/wAia1AyDG/m6a7bZq40hDTgeSVNOo7trTsEH3aIIJFExO07q/wj8G4/4dOPoHFWN3ifcWI0ibMkT7m+px6TJkuF11Z2T0DegEgnWtkkqJom1pvaZb3goIxaJv2L+NVGK3oFAoFAoIl972WYP2Rz4TQZHmJKbqhehoQGj3+85QSsKWVXJBUNHoXv+00Gj4R9V4n3V/GaC2oFAoFAoI90YdlW2RGZSCtyOtKQTruUkCgzbLOPM+ukxmTY4zTRRGS26JTSHUEhRII6XmyD3I+kgjXbt3DkxHj7kC2XNEq9iOppCFjy4kVLfUopIGyp9fYbJ0ANnXfQ0Q79jUB+22SPCkpAW2k9QB3raiaCfQKBQKBQKDjoFByUCgUCg//Z"
+                                            alt="" class="goods-img">
+                                        <span class="overtxt">口袋喷雾</span>
+                                    </a>
+                                </td>
+                                <td width="25%"></td>
+                                <td>58.00 x 1</td>
+                                <td>有库存</td>
+                                <td>58.00</td>
+                            </tr>
+                            <tr>
+                                <td width="45%" class="tl">
+                                    <a href="javascript:void(0)">
+                                        <!-- <img src="./images/1.jpg" alt="" class="goods-img"> -->
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCABBAEEDAREAAhEBAxEB/8QAHAABAAMAAwEBAAAAAAAAAAAAAAQFBwMGCAIJ/8QAORAAAQMEAQIDAwYPAAAAAAAAAQIDBAAFBhEHEiEIE0FRYbIUFTE2RHIkJTNDVGJkcXSBkZKhsbP/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQYCAwQF/8QAKREBAAIBAgMIAgMAAAAAAAAAAAECAwQRBRIhBhMiMVFxgaEHYSNBYv/aAAwDAQACEQMRAD8A/fygUHDPlCFCellBUGmlLKQdb0N6oOtXflCLZ1sNvWhai+yHB0v/AEDZGu491B92XkmPe5KorFrU2Q0pe1v7Hb07Cgv7TcBdLczPDXR5qOrp6t6/nQSaBQKBQKCHkBCbJMJ/RXPhoMrzgblQT7ISfT9Y0EjAVfjVeu/4M56+6g0TDFFWNRCT+bI/oo0FpQKBQKBQQMnV02CYd/Zl/wCqDF+ak598giu8ev29MtuGC43Ogl9S0lQ/JJLrSOoDqOlqAV2G0+oRvD81y0m7ypvJqba0ZMZRZiQX1r+TlKSknSnHOjr7KKA4tKdDR2VUG1YQd4xF/cv4zQW1AoFAoFBTchR7rLwq5xbJdW4MxyGtMaY7E89LK/RRbKk9YHs2N+2t2nvhx5q2zU56xPWu813j05oiZj32cmvw6vUaLJi0ubuclomK35YvyT/VuS3htt6T0l455YyLxjcYZhGx+/8APfH9ztycbevNwya54UmzxrbHZLhdS71SnEJaQhBWXVKHSArZ1VotxLsPfrPDM1fbVbx94olVbcJ7e1n+Hi2Lb/WkifuMsfW0fpD4q5T8TvNsyzxeJPEfxiuy5dYpk2wcg4pYE3uMENJWnqaT56GntOIUg7UNFCkkAg1lg4l2Fw5Itbhua+3nE6mIifmMUzHw0xwb8jWyVnLxnByxMbxTRRWZ69fFOa23T9T8+T1/wda8wsvFdmtXIGaRsivTEdable4dlTbmpjvmK24iMlxwMA+iAtWtfSarnEM2h1Gtvk0eGcOKZ8NJvOSax6TeYrNveYha+GabX6TRxi1mo7/JE23vNK03ibTNY5a9PBWYpv525eaesy7ZXE9AoFAoFBAycbx+Z/DLP+KDz7zvxJiXM14fw3kHHod6xy7Yc/Zchsk3r6Z0SX5qXGj06PSUdQJCkqSQCCCAQFV4bvCvx14a5eM4Jwhikaw4jjdruLMW2KmvSJC3pTjjzz63XCpTzjjy1rcWteyToAAAAPR+DfViMfe5/wBFUFvQKBQKBQQ8hT1WKYN/ZHPhNBhPOeB2nkywXnj2/wAia1AyDG/m6a7bZq40hDTgeSVNOo7trTsEH3aIIJFExO07q/wj8G4/4dOPoHFWN3ifcWI0ibMkT7m+px6TJkuF11Z2T0DegEgnWtkkqJom1pvaZb3goIxaJv2L+NVGK3oFAoFAoIl972WYP2Rz4TQZHmJKbqhehoQGj3+85QSsKWVXJBUNHoXv+00Gj4R9V4n3V/GaC2oFAoFAoI90YdlW2RGZSCtyOtKQTruUkCgzbLOPM+ukxmTY4zTRRGS26JTSHUEhRII6XmyD3I+kgjXbt3DkxHj7kC2XNEq9iOppCFjy4kVLfUopIGyp9fYbJ0ANnXfQ0Q79jUB+22SPCkpAW2k9QB3raiaCfQKBQKBQKDjoFByUCgUCg//Z"
+                                            alt="" class="goods-img">
+                                        <span class="overtxt">口袋喷雾</span>
+                                    </a>
+                                </td>
+                                <td width="25%"></td>
+                                <td>58.00 x 1</td>
+                                <td>有库存</td>
+                                <td>58.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="pay-detail clearfix">
+                <div class="mash dn"></div>
+                <div class="fl" id="order_option">
+                    <div class="open-pop">
+                        <a href="javascript:void(0)" class="open-a">
+                            <i class="icon-bgr icon-add-big"></i>使用积分&nbsp;代金券
+                        </a>
+                        <div class="child-pop dn">
+                            <div class="heads">
+                                <a href="javascript:void(0)" class="current">填写优惠码</a>
+                                <a href="javascript:void(0)">使用已有代金劵</a>
+                            </div>
+                            <div class="conts">
+                                <div class="cont0">
+                                    <div class="input">
+                                        <input type="text" placeholder="请输入优惠码" id="coupon_code">
+                                        <a href="javascript:void(0)" id="submit">提交验证
+                                            <i class="icon-bgr icon-page-r"></i>
+                                        </a>
+                                    </div>
+                                    <p class="error dn"></p>
+                                    <p class="p-y-10">共有20个积分，本订单可使用20， 可抵用
+                                        <span class="f-d93732">￥4</span>
+                                        <a href="javascript:void(0)" class="use-btn">立即使用</a>
+                                    </p>
+                                </div>
+                                <div class="cont0 dn">
+                                    <div class="input">
+                                        <input type="text" placeholder="请输入你的名字">
+                                        <a href="javascript:void(0)">提交验证
+                                            <i class="icon-bgr icon-page-r"></i>
+                                        </a>
+                                    </div>
+                                    <p class="p-y-10">共有20个积分，本订单可使用20， 可抵用
+                                        <span class="f-d93732">￥4</span>
+                                        <a href="javascript:void(0)" class="use-btn">立即使用</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="open-pop m-t-17">
+                        <a href="javascript:void(0)">
+                            <i class="icon-bgr icon-add-big"></i>添加订单备注
+                        </a>
+                        <div class="child-pop dn">
+                            <input type="text" class="remarks" placeholder="请填写订单备注">
+                        </div>
+                    </div>
+                    <div class="open-pop m-t-17">
+                        <a href="javascript:void(0)">
+                            <i class="icon-bgr icon-add-big"></i>需要发票
+                        </a>
+                        <div class="child-pop m-t-20 dn">
+                            <!-- dn -->
+                            <div class="heads">
+                                <a href="javascript:void(0)" class="current">不需要</a>
+                                <a href="javascript:void(0)">个人</a>
+                                <a href="javascript:void(0)">公司</a>
+                            </div>
+                            <div class="conts">
+                                <div class="coun0 m-t-15"></div>
+                                <div class="coun1 m-t-15 dn">
+                                    <input type="text" class="remarks" placeholder="请填写开据发票人姓名">
+                                </div>
+                                <div class="coun2 clearfix m-t-15 fl dn">
+                                    <input type="text" class="fl remarks" placeholder="请填写开据发票公司名称">
+                                    <!-- <div class="selectedbox fr"> -->
+                                    <div class="fr rep">
+                                        <a href="javascript:void(0)" class="text fr">
+                                            <span>产品明细</span>
+                                            <i class="icon-bgr icon-arrowD"></i>
+                                        </a>
+                                        <span class="others">
+                                                <a href="javascript:void(0)" class="option">产品明细</a>
+                                                <a href="javascript:void(0)" class="option">办公用品</a>
+                                                <a href="javascript:void(0)" class="option">电子产品</a>
+                                                <a href="javascript:void(0)" class="option">工艺礼品</a>
+                                            </span>
+                                    </div>
+
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fr pay-close">
+                    <div class="clearfix">
+                        <span class="fl">商品件数：</span>
+                        <span class="fr">1</span>
+                    </div>
+                    <div class="clearfix">
+                        <span class="fl">金额合计：</span>
+                        <span class="fr">￥728.0</span>
+                    </div>
+                    <div class="clearfix total">
+                        <span class="fl">应付金额：</span>
+                        <span class="fr">￥728.0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-btn">
+                <div class="mash dn"></div>
+                <a href="javascript:;" class="btn-red-single">提交订单</a>
+            </div>
+        </div>
+    </div>
+    <!--中间结束  -->
+
+
+
+    <!-- 尾部开始 -->
+    <div class="footer">
+        <div class="center">
+            <ul class="top clearfix">
+                <li class="logo"><i class="bottomLogo"></i></li>
+                <li class="text"><img src="./images/bottomText.png"></li>
+                <li class="our">
+                    <p>关注我们</p>
+                    <p class="icon">
+                        <a href="##" class="sina"></a>
+                        <a href="##" class="tencent"></a>
+                        <a href="##" class="wechat">
+                            <span></span>
+                        </a>
+                    </p>
+                </li>
+                <li class="phone">
+                    <p class="num">400-611-2156</p>
+                    <p class="time">周一至周日 8:00-24:00</p>
+                    <a href="##" class="qq">QQ在线交谈</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <ul class="center clearfix icons">
+                <li class="first">
+                    <i class="icon1"></i> 30天免费退换货
+                </li>
+                <li>
+                    <i class="icon2"></i> 100%正品保证
+                </li>
+                <li>
+                    <i class="icon3"></i> 全场免运费
+                </li>
+                <li>
+                    <i class="icon4"></i> 提供礼品级包装
+                </li>
+            </ul>
+            <div class="center link clearfix">
+                <div class="fl">
+                    <p class="left">
+                        <span>&copy; liwuyou.com</span>
+                        <a href="##"><span>粤ICP备10222238号-1</span></a>
+
+                    </p>
+                </div>
+                <div class="fr">
+                    <p class="right">
+                        <a href="##">关于我们</a><span>|</span>
+                        <a href="##">帮助中心</a><span>|</span>
+                        <a href="##">人才招聘</a><span>|</span>
+                        <a href="##">售后服务</a><span>|</span>
+                        <a href="##">配送与验收</a><span>|</span>
+                        <a href="##">联系我们</a>
+                    </p>
+                </div>
+            </div>
+            <div class="center clearfix friends">
+                <div class="friendLink fl">
+                    <a href="javascript:;">友情链接</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                </div>
+                <div class="img fr">
+                    <a href="##">
+                        <img src="./images/newGovIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部结束 -->
+    <!-- 新增收货地址 -->
+    <div class="masking dn">
+        <div class="site">
+            <div class="move"></div>
+            <i class="mas-i"></i>
+            <form action="">
+                <p class="f18 resd" id="newTitle">新增收货地址</p>
+                <div class="clearfix mas-lin m-t">
+                    <span class="title fl">收货人</span>
+                    <div class="fr addrcont" id="name">
+                        <input type="text" name="consignee" placeholder="请输入姓名" class="inp">
+                    </div>
+                </div>
+                <div class="line clearfix">
+                    <span class="title fl">手机号码</span>
+                    <div class="addrcont fr mas-lin" id="number">
+                        <input type="text" placeholder="请输入手机号" class="inp">
+                    </div>
+                </div>
+                <div class="line clearfix">
+                    <span class="addresstitle fl">收货地区</span>
+                    <div class="addrcont fr">
+                        <select name="province" id="province" class="addr-sel">
+                            <option value="0">请选择省份</option>
+                            <option value="1" info="北京" selected="selected">北京</option>
+                            <option value="2" info="上海">上海</option>
+                            <option value="3" info="深圳">深圳</option>
+                            <option value="4" info="广州">广州</option>
+                        </select>
+                        <select name="" id="downtown" class="addr-sel m-l">
+                            <option value="0">请选择市</option>
+                            <option value="1" info="北京" selected="selected">北京</option>
+                            <option value="2" info="佛山" >佛山</option>
+                            <option value="3" info="南京" >南京</option>
+                            <option value="4" info="日本">日本</option>
+                        </select>
+                        <select name="" id="row" class="addr-sel m-l">
+                            <option value="0">请选择区</option>
+                            <option value="1" info="朝阳区" selected="selected">朝阳区</option>
+                            <option value="2" info="东阳区" >东阳区</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="line clearfix">
+                    <span class="title fl">收货地址</span>
+                    <div class="addrcont fr" id="site">
+                        <textarea name="" id="" cols="30" rows="10" class="address-area" placeholder="详细信息"></textarea>
+                    </div>
+                </div>
+                <div class="line clearfix">
+                    <label for="inp" class="check fl">
+                        <input type="checkbox" id="inp">设为默认
+                    </label>
+                    <a href="javascript:;" class="fr btn-red-sml" id="type">新增</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 新增收货地址结束 -->
+    <!-- 填写贺卡 -->
+    <div class="gtgd dn">
+        <div class="content">
+            <div class="move"></div>
+            <div class="giftcard">
+                <a href="javascript:void(0);" class="aui_close"></a>
+                <form action="">
+                    <div class="lint clearfix">
+                        <span class="half fl">填写贺卡信息</span>
+                        <span class="fr lable">
+                            <label for="in">
+                                <input type="checkbox" id="in" class="in">空白贺卡
+                            </label> 
+                        </span>
+                    </div>
+                    <div class="lint clearfix">
+                        <span class="gift-title fl">致</span>
+                        <input type="text" placeholder="收礼人姓名" id="gift_to" class="gift-to-name fr">
+                    </div>
+                    <div class="lint clearfix rel">
+                        <span id="refresh">
+                            换一换
+                            <i class="icon-bgr icon-refresh"></i>
+                        </span>
+                        <span class="gift-title fl">正文</span>
+                        <textarea id="greetings" class="greetings fl" cols="30" rows="5" placeholder="您可以试试祝福语模板"></textarea>
+                    </div>
+                    <div class="lint clearfix rel">
+                        <span class="gift-title fl">&nbsp;</span>
+                        <div class="bress-box fl" id="bress_box">
+                            <div class="bress-link">
+                                <span class="dib f-cdae7d">祝福语模版</span>
+                                <a href="javascript:void(0)" class="borde">情人节</a>
+                                <a href="javascript:void(0)">新春</a>
+                                <a href="javascript:void(0)">母亲节</a>
+                                <a href="javascript:void(0)">六一儿童节</a>
+                                <a href="javascript:void(0)">女友生日</a>
+                                <a href="javascript:void(0)">男友生日</a>
+                                <a href="javascript:void(0)">朋友生日</a>
+                                <a href="javascript:void(0)">结婚</a>
+                                <a href="javascript:void(0)">父亲生日</a>
+                                <a href="javascript:void(0)">母亲生日</a>
+                                <a href="javascript:void(0)">领导生日</a>
+                                <a href="javascript:void(0)">客户生日</a>
+                                <a href="javascript:void(0)">长辈生日</a>
+                                <a href="javascript:void(0)">同事生日</a>
+                                <a href="javascript:void(0)">孩子生日</a>
+                                <a href="javascript:void(0)">乔迁之喜贺词</a>
+                                <a href="javascript:void(0)">怀孕生子</a>
+                                <a href="javascript:void(0)">端午节</a>
+                                <a href="javascript:void(0)">升迁升职贺词</a>
+                                <a href="javascript:void(0)">结婚纪念日</a>
+                                <a href="javascript:void(0)">中秋节</a>
+                                <a href="javascript:void(0)">教师节</a>
+                                <a href="javascript:void(0)">光棍节</a>
+                                <a href="javascript:void(0)">探病</a>
+                                <a href="javascript:void(0)">白色情人节</a>
+                                <a href="javascript:void(0)">三八妇女节</a>
+                                <a href="javascript:void(0)">父亲节</a>
+                                <a href="javascript:void(0)">七夕</a>
+                                <a href="javascript:void(0)">开业贺词</a>
+                                <a href="javascript:void(0)">考试</a>
+                                <a href="javascript:void(0)">分别</a>
+                                <a href="javascript:void(0)">毕业赠言</a>
+                                <a href="javascript:void(0)">忏悔录</a>
+                                <a href="javascript:void(0)">圣诞节</a>
+                                <a href="javascript:void(0)">愚人节</a>
+                                <a href="javascript:void(0)">五一劳动节</a>
+                                <a href="javascript:void(0)">元旦</a>
+                                <a href="javascript:void(0)">感恩节</a>
+                                <a href="javascript:void(0)">建军节</a>
+                                <a href="javascript:void(0)">国庆</a>
+                            </div>
+                        </div>
+                        <i class="icon-bgr icon-arrow-giftR" id="arrowRight"></i>
+                    </div>
+                    <div class="lint clearfix">
+                        <span class="gift-title fl">署名</span>
+                        <input type="text" id="gift_from" placeholder="送礼人姓名" class=" fl gift-to-name">
+                    </div>
+                    <div class="lint clearfix contbox">
+                        <p class="pack_title">免费的彩纸包装</p>
+                        <div class="radio-box clearfix">
+                            <div class="fl">
+                                <p>
+                                    <label for="inb" class="radio">
+                                        <input type="radio" id="inb" name="pop_pack" class="input">直接包好
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="inc" class="radio">
+                                        <input type="radio" id="inc" name="pop_pack" class="input">提供材料
+                                    </label>
+                                    <span>自己动手，适合于想先看看礼物的你。</span>
+                                </p>
+                            </div>
+                            <div class="fr">
+                                <a href="javascript:void(0);" class="btn-red">保存</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 填写贺卡结束 -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./js/step.js"></script>
+</body>
+
+</html>

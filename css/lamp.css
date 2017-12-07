@@ -1,0 +1,15 @@
+.selfdom span{
+    display: inline-block;
+}
+.goods-property .hint{
+    color:#000;
+}
+.comment-list p{
+    text-align: center;
+    padding:40px 0;
+    color:#999;
+}
+.gift input,.selfdom input{
+    width: 350px;
+    height: 34px;
+}

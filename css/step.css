@@ -1,0 +1,1461 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* body, button, input, select, textarea { font:14px/1.5 "微软雅黑",tahoma, arial, \5b8b\4f53; } */
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 14px/1.5 Arial, 'Microsoft Yahei', STHeiti, sans-serif;
+    color: #333;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: couriernew, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333
+}
+
+a:hover {
+    text-decoration: none;
+    margin: 0px;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset,
+img,
+button,
+input {
+    border: 0;
+    outline: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+i {
+    font-style: italic;
+}
+
+a {
+    display: inline-block;
+}
+
+
+/*清除浮动*/
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* a, a:active, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+} */
+
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.f-b28850 {
+    color: #b28850;
+}
+
+a {
+    transition-property: color;
+    transition-duration: .3s;
+}
+
+.icon-bgr {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    background: url(../images/sprite.png);
+}
+
+.dn {
+    display: none;
+}
+
+
+/* 头部开始 */
+
+.header {
+    height: 93px;
+    border-top: 5px solid #484442;
+    background-color: #fff;
+}
+
+.header .logo {
+    margin-top: 17px;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    background: #d93732 url(../images/sprite.png);
+    transition: background .3s;
+}
+
+.header .logo a {
+    display: inline-block;
+    width: 57px;
+    height: 57px;
+    text-indent: -10000px;
+}
+
+.header .logo:hover {
+    background-position: -57px 0;
+}
+
+.header .dib {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 28px;
+    font-size: 22px;
+}
+
+.header .cart-hd {
+    margin-top: 31px;
+}
+
+.header .cart-hd .m-l {
+    margin-left: 30px;
+}
+
+.header .cart-hd .m-l:hover {
+    color: #d93732;
+}
+
+
+/* 头部结束 */
+
+
+/* 中间部分 */
+
+.flow {
+    padding-bottom: 10px;
+    background: #f5f5f5;
+}
+
+.flow .flow-curr {
+    padding: 20px;
+    line-height: 22px;
+    background: #f5f5f5;
+}
+
+.flow .center {
+    font-size: 12px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 首页/购物车 */
+
+.flow .fl {
+    float: left;
+}
+
+
+/* 左 */
+
+.flow .fl .sp {
+    padding: 0 10px;
+}
+
+.flow .fl a:hover {
+    color: #d93732;
+}
+
+
+/* 右 */
+
+.flow .fr {
+    float: right;
+}
+
+.flow .ct-a {
+    display: inline-block;
+    font-size: 12px;
+    width: 86px;
+    height: 18px;
+    line-height: 18px;
+    border: 2px solid #979795;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.flow .ct-a:hover {
+    border-color: #d93732;
+    color: #d93732;
+}
+
+.flow .ct-sp {
+    color: #666;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.flow .fb-center {
+    background: #fff;
+    /* text-align: center; */
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+
+.flow .fb-center .address {
+    padding: 50px 65px;
+    border-bottom: 3px solid #f5f5f5;
+}
+
+
+/* .flow .fb-center .address a{
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    height: 90px;
+    width: 198px;
+    margin: 0 12px 12px 0;
+    position: relative;
+} */
+
+.flow .fb-center .address .add-sp {
+    width: 140px;
+    font-size: 13px;
+}
+
+.flow .fb-center .address .add-fr {
+    float: right;
+    width: 930px;
+}
+
+.flow .fb-center .address a.addnew {
+    width: 108px;
+    height: 30px;
+    padding: 40px 55px;
+    border: 1px solid #e2e2e2;
+    margin: 0 12px 12px 0;
+    font-size: 13px;
+}
+
+.flow .fb-center .address a.facus {
+    height: 88px;
+    width: 196px;
+    border-width: 2px;
+    border-color: #d93732;
+}
+
+#address_list {
+    width: 930px;
+}
+
+.flow .fb-center .address a .operate {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 32px;
+    padding-left: 10px;
+    color: #b28850;
+}
+
+.flow .fb-center .address a .operate em:first-child {
+    margin-right: 10px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.flow .fb-center .address a.facus .operate em {
+    margin-right: 10px;
+}
+
+.flow .fb-center .address .add-a {
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    height: 90px;
+    width: 198px;
+    margin: 0 12px 12px 0;
+    position: relative;
+}
+
+
+/* .flow .fb-center .address .add-d a:first-child {
+    border-color: #d93732;
+} */
+
+.flow .fb-center .address .addnew .icon-add1 {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    background-position: -271px -31px;
+}
+
+.flow .fb-center .cards {
+    position: relative;
+    padding: 49px 65px;
+    position: relative;
+    border-bottom: 3px solid #f5f5f5;
+}
+
+.flow .fb-center .cards .mash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#order_option {
+    width: 560px;
+}
+
+.flow .fb-center .cards .icon-gift {
+    position: absolute;
+    right: 108px;
+    top: -3px;
+    width: 71px;
+    height: 122px;
+    background: url("../images/gift.png")
+}
+
+.flow .fb-center .cards .car-sp {
+    width: 140px;
+    font-size: 13px;
+}
+
+.flow .fb-center .cards .car-count {
+    font-size: 13px;
+}
+
+.flow .fb-center .cards .car-count a {
+    color: #b28850;
+}
+
+.flow .fb-center .cards .car-count .count-a:hover {
+    color: #d93732;
+}
+
+.flow .fb-center .cards .car-count .count-a .count-i {
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+    background-position: -268px -48px;
+}
+
+.flow .fb-center .cards .car-count #alter_card,
+#delete_card {
+    margin-left: 10px;
+}
+
+.flow .fb-center .cards .car-count #alter_card:hover {
+    color: #d93732;
+}
+
+.flow .fb-center .cards .car-count #delete_card:hover {
+    color: #d93732;
+}
+
+.flow .fb-center .cards .car-count .count-sp {
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.flow .fb-center .logistics {
+    padding: 40px 0 30px;
+    margin: 0 65px;
+    position: relative;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.flow .fb-center .logistics .log-ct {
+    max-width: 930px;
+}
+
+.flow .fb-center .logistics a {
+    display: inline-block;
+    width: 208px;
+    padding: 13px 0;
+    border: 1px solid #e2e2e2;
+    color: #333;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.flow .fb-center .logistics a {
+    display: none;
+}
+
+.flow .fb-center .logistics .focus {
+    padding: 12px 0;
+    border: 2px solid #d93732;
+    color: #333;
+    width: 206px;
+}
+
+.flow .fb-center .logistics a:hover {
+    padding: 12px 0;
+    border: 2px solid #d93732;
+    color: #333;
+    width: 206px;
+}
+
+.flow .fb-center .logistics .pay-sp {
+    width: 140px;
+    line-height: 50px;
+    font-size: 13px;
+}
+
+.flow .fb-center .pay-way {
+    position: relative;
+    padding: 30px 0 40px;
+    margin: 0 65px;
+}
+
+.flow .fb-center .pay-way .pay-sp {
+    width: 140px;
+    line-height: 50px;
+    font-size: 13px;
+}
+
+.flow .fb-center .pay-way a {
+    display: inline-block;
+    width: 208px;
+    padding: 13px 0;
+    border: 1px solid #e2e2e2;
+    color: #333;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.flow .fb-center .pay-way .focus {
+    padding: 12px 0;
+    border: 2px solid #d93732;
+    color: #333;
+    width: 206px;
+}
+
+.flow .fb-center .pay-way a:hover {
+    padding: 12px 0;
+    border: 2px solid #d93732;
+    color: #333;
+    width: 206px;
+}
+
+.flow .fb-center .pay-way #charge:hover {
+    padding: 12px 0;
+    border: 2px solid #d93732;
+    color: #333;
+    width: 206px;
+}
+
+#charge {
+    display: none;
+}
+
+.flow .fb-center .goods-list {
+    position: relative;
+    padding: 30px 0;
+    margin: 0 65px;
+}
+
+.flow .fb-center .goods-list .goods-p {
+    padding-bottom: 10px;
+}
+
+.flow .fb-center .goods-list .good-p .goods-titel {
+    width: 140px;
+    font-size: 16px;
+}
+
+.flow .fb-center .goods-list .goods-p .goods-a .icon-arrowL {
+    margin-right: 10px;
+    width: 7px;
+    height: 15px;
+    background-position: -293px -31px;
+}
+
+.flow .fb-center .goods-list .goods-p .goods-a:hover {
+    color: #d93732;
+}
+
+.flow .fb-center .goods-list .goods-cont {
+    padding: 15px 0;
+    border-width: 2px 0;
+    border-style: solid;
+    border-color: #cfa972;
+    text-align: center;
+}
+
+.flow .fb-center .goods-list .goods-cont table {
+    width: 100%;
+}
+
+.flow .fb-center .goods-list .goods-cont table td {
+    padding: 5px;
+}
+
+.flow .fb-center .goods-list .goods-cont .tl {
+    text-align: left;
+}
+
+.flow .fb-center .goods-list .goods-cont .tl .goods-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.flow .fb-center .goods-list .goods-cont .tl .overtxt {
+    display: inline-block;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.flow .fb-center .pay-detail {
+    position: relative;
+    padding: 0 0 25px;
+    margin: 0 65px;
+}
+
+.flow .fb-center .pay-detail .open-pop .open-a {
+    font-size: 13px;
+}
+
+.flow .fb-center .pay-detail .open-pop .open-a .icon-add-big {
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
+    background-position: -241px -38px;
+}
+
+.flow .fb-center .pay-detail .open-pop .child-pop {
+    margin-top: 20px;
+}
+
+.flow .fb-center .pay-detail .open-pop .child-pop .heads a {
+    padding: 3px 20px;
+}
+
+.flow .fb-center .pay-detail .open-pop .child-pop .heads .current {
+    background: #f2f2f2;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .cont0 {
+    margin-top: 15px;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .cont0 .input {
+    border: 1px solid #e2e2e2;
+    width: 560px;
+    height: 38px;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .cont0 .input input {
+    display: inline-block;
+    width: 400px;
+    border: none;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .cont0 .input a {
+    float: right;
+    display: block;
+    border-left: 1px solid #e2e2e2;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    text-align: center;
+    display: none;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .cont0 .error {
+    margin-top: 5px;
+    color: #d93732;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .cont0 .input .icon-page-r {
+    height: 12px;
+    width: 12px;
+    background-position: -192px -2px;
+    margin-left: 5px;
+}
+
+.p-y-10 {
+    padding: 10px 0;
+}
+
+.f-d93732 {
+    color: #d93732;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .use-btn {
+    width: 90px;
+    height: 28px;
+    line-height: 28px;
+    border: 2px solid #eee;
+    margin-left: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.m-t-17 {
+    margin-top: 17px;
+}
+
+
+/* .icon-add-big{
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
+    background-position: -241px -38px;
+} */
+
+.m-t-20 {
+    margin-top: 20px;
+}
+
+.remarks {
+    border: 1px solid #e2e2e2;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    width: 96%;
+}
+
+.icon-add-big {
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
+    background-position: -241px -38px;
+}
+
+.m-t-15 {
+    margin-top: 15px;
+}
+
+.flow .fb-center .pay-detail .open-pop .remarks {
+    border: 1px solid #e2e2e2;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    /* width: 96%; */
+    width: 400px;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .remarks {
+    display: inline-block;
+    width: 400px;
+    border: 1px solid #e2e2e2;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .text {
+    display: block;
+    border: 1px solid #e2e2e2;
+    height: 40px;
+    width: 130px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .icon-arrowD {
+    width: 12px;
+    height: 6px;
+    background-position: -220px 0;
+    margin-left: 25px;
+}
+
+.icon-arrowU {
+    width: 12px;
+    height: 6px;
+    background-position: -220px -6px;
+    margin-left: 25px;
+}
+
+
+/* 公用 */
+
+.icon-sub-big {
+    margin-right: 8px;
+    width: 26px;
+    height: 26px;
+    background-position: -241px -65px;
+}
+
+
+/* 公用 */
+
+.flow .fb-center .pay-detail .open-pop .conts .rep {
+    position: relative;
+    margin-left: 5px;
+}
+
+
+/* .flow .fb-center .pay-detail .open-pop .conts .rep:hover .others{
+    display: block;
+} */
+
+
+/* .flow .fb-center .pay-detail .open-pop .conts .rep:hover .icon-arrowD{
+    background-position: -220px -6px;
+} */
+
+.flow .fb-center .pay-detail .open-pop .conts .others {
+    display: block;
+    display: none;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    width: 130px;
+    border: 1px solid #e2e2e2;
+    border-top-color: #fff;
+    background: #fff;
+    text-align: left;
+}
+
+.flow .fb-center .pay-detail .open-pop .conts .others a {
+    display: block;
+    line-height: 36px;
+    padding-left: 17px;
+}
+
+.flow .fb-center .pay-detail .pay-close {
+    width: 250px;
+    height: 150px;
+}
+
+.flow .fb-center .pay-detail .pay-close .total {
+    border-top: 1px solid #dedede;
+    padding-top: 10px;
+}
+
+
+/* 提交表单 */
+
+.flow .fb-center .order-btn {
+    padding: 28px 65px;
+    border-top: 3px solid #f5f5f5;
+    text-align: right;
+}
+
+.flow .fb-center .order-btn .btn-red-single {
+    display: inline-block;
+    padding: 15px 70px;
+    color: #fff;
+    background: #d93732;
+    border-radius: 3px;
+}
+
+
+/* 中间结束 */
+
+
+/* 尾部开始 */
+
+.footer {
+    font-size: 12px;
+}
+
+.footer .top {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.footer .top li {
+    float: left;
+}
+
+.footer .top .logo {
+    width: 207px;
+    height: 67px;
+    padding: 13px 0 0 27px;
+    border-right: 1px solid #e2e2e2;
+}
+
+.footer .top .bottomLogo {
+    display: block;
+    margin-right: 60px;
+    margin-left: 20px;
+    width: 152px;
+    height: 59px;
+    background: url(../images/sprite.png) 0 -58px;
+}
+
+.footer .top .text {
+    width: 394px;
+    height: 75px;
+    border-right: 1px solid #e2e2e2;
+    padding: 5px 30px 0;
+}
+
+.footer .top .our {
+    width: 135px;
+    height: 75px;
+    padding: 5px 60px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border-right: 1px solid #e2e2e2;
+}
+
+.footer .top .our p {
+    margin-bottom: 10px;
+}
+
+.footer .top .our a {
+    display: inline-block;
+    background-image: url(../images/sprite.png);
+}
+
+.footer .top .our .sina {
+    width: 28px;
+    height: 24px;
+    background-position: 0 -276px;
+}
+
+.footer .top .our .sina:hover {
+    background-position: 0 -251px;
+}
+
+.footer .top .our .tencent {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-position: -29px -276px;
+}
+
+.footer .top .our .tencent:hover {
+    background-position: -29px -251px;
+}
+
+.footer .top .our .wechat {
+    margin-left: 10px;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    background-position: -54px -276px;
+}
+
+.footer .top .our .wechat:hover {
+    background-position: -54px -251px;
+}
+
+.footer .top .our .wechat span {
+    display: inline-block;
+    width: 142px;
+    height: 151px;
+    background-image: url(../images/bottomWechat.png);
+    position: absolute;
+    left: 0;
+    top: -151px;
+    display: none;
+}
+
+.footer .top .our .wechat:hover span {
+    display: inline-block;
+}
+
+.footer .top .phone {
+    width: 254px;
+    height: 80px;
+    text-align: center;
+}
+
+.footer .top .phone .num {
+    line-height: 1;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* .footer .top .phone .time{
+    font-size: 12px;
+} */
+
+.footer .top .phone .qq {
+    display: inline-block;
+    width: 86px;
+    height: 18px;
+    padding: 5px 30px;
+    border: 2px solid #ebebeb;
+    border-radius: 30px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+
+.footer .top .phone .qq:hover {
+    border-color: #d93732;
+    color: #d93732;
+}
+
+.footer .bottom {
+    background-color: #484442;
+    color: #e7e7e7;
+}
+
+.footer .bottom .icons {
+    padding: 45px 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 2px solid #666;
+}
+
+.footer .bottom .icons li {
+    float: left;
+    width: 230px;
+    padding-left: 30px;
+    margin-left: 53px;
+}
+
+.footer .bottom .icons li.first {
+    margin-left: 0;
+}
+
+.footer .bottom .icons li i {
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    margin-right: 16px;
+    vertical-align: middle;
+    background-image: url(../images/sprite1.png);
+}
+
+.footer .bottom .icons li .icon2 {
+    background-position: -53px 0;
+}
+
+.footer .bottom .icons li .icon3 {
+    background-position: -106px 0;
+}
+
+.footer .bottom .icons li .icon4 {
+    background-position: -159px 0;
+}
+
+.footer .bottom .link {
+    padding: 40px 30px;
+    width: 1140px;
+    border-bottom: 2px solid #666;
+    color: #c3c3c3;
+}
+
+.footer .bottom .link a {
+    color: #c3c3c3;
+}
+
+.footer .bottom .link .left span {
+    margin-right: 16px;
+}
+
+.footer .bottom .link .right span {
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+
+.footer .bottom .friends {
+    padding: 25px 20px;
+    width: 1140px;
+}
+
+.footer .bottom .friends .friendLink {
+    width: 1000px;
+}
+
+.footer .bottom .friendLink a {
+    display: inline-block;
+    margin-right: 8px;
+    color: #c3c3c3;
+}
+
+.footer .bottom .friends .img img {
+    width: 112px;
+    height: 40px;
+}
+
+
+/* 尾部结束 */
+
+
+/* 新增收货地址 */
+
+.masking {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2);
+    /* display: none; */
+    /* display: block; */
+}
+
+.masking .site {
+    position: absolute;
+    /* position: fixed; */
+    width: 540px;
+    height: 500px;
+    box-sizing: border-box;
+    background: #fff;
+    top: 10%;
+    /* top: 0; */
+    /* left: 0; */
+    left: 50%;
+    margin-left: -270px;
+    padding: 40px 25px 20px;
+}
+
+.masking .site .mas-i {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    top: -15px;
+    right: -20px;
+    background: url("../images/masking.png") 0 -60px no-repeat;
+}
+
+.masking .site .mas-i:hover {
+    background-position: 0 -94px;
+}
+
+.masking .site .resd {
+    /* cursor: move; */
+}
+
+.f18 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.m-t {
+    margin-top: 40px;
+}
+
+.masking .site .move,.gtgd .content .move{
+    position: absolute;
+    height: 22px;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    cursor: move;
+}
+
+.masking .site .mas-lin {
+    /* margin-top: 40px; */
+    margin-bottom: 10px;
+}
+
+.masking .site .title {
+    width: 85px;
+    line-height: 34px;
+}
+
+.masking .site .line {
+    margin-bottom: 10px;
+}
+
+.masking .site .addrcont {
+    width: 385px;
+    margin-bottom: 10px;
+}
+
+.masking .site .mas-lin .inp {
+    width: 365px;
+    line-height: 1px;
+    display: inline-block;
+    border: 1px solid #eee;
+    padding: 8px 9px;
+}
+
+.masking .site .line .addresstitle {
+    width: 85px;
+    line-height: 24px;
+}
+
+.m-l {
+    margin-left: 10px;
+}
+
+select {
+    width: 80px;
+}
+
+select option {
+    width: 80px;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+.masking .site .line .address-area {
+    padding: 1px 9px;
+    line-height: 32px;
+    height: 102px;
+    width: 365px;
+    border: 1px solid #eee;
+    outline: 0;
+    resize: none;
+}
+
+.masking .site .line .check {
+    padding: 8px 0;
+}
+
+.masking .site .line .check #inp {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 0;
+}
+
+.masking .site .line .btn-red-sml {
+    display: inline-block;
+    padding: 8px 50px;
+    color: #fff;
+    background: #d93732;
+    border-radius: 3px;
+}
+
+.masking .site .line .btn-red-sml:hover {
+    background: #ed3d38;
+}
+
+
+/* 新增收货地址结束 */
+
+
+/* 填写贺卡 */
+
+.gtgd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .2);
+}
+
+.gtgd .content {
+    position: absolute;
+    padding: 20px 25px;
+    width: 680px;
+    background: #fff;
+    margin: 0 auto;
+    top: 12%;
+    left: 50%;
+    margin-left: -340px;
+}
+
+.gtgd .content .aui_close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: url("../images/masking.png") 0 -60px no-repeat;
+}
+
+.gtgd .content .giftcard {
+    padding: 15px;
+}
+
+.gtgd .content .giftcard .lint {
+    padding: 10px 0;
+}
+
+.gtgd .content .giftcard .lint .half {
+    width: 50%;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.gtgd .content .giftcard .lint .lable {
+    width: 50%;
+    text-align: right;
+}
+
+.gtgd .content .giftcard .lint .lable input {
+    vertical-align: middle;
+    margin: -2px 0 0;
+}
+
+.gtgd .content .giftcard .lint .gift-title {
+    width: 62px;
+    padding-left: 30px;
+    line-height: 40px;
+}
+
+.gtgd .content .giftcard .lint .gift-to-name {
+    width: 546px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    border: 1px solid #eee;
+}
+
+.gtgd .content .giftcard .rel {
+    position: relative;
+}
+
+.gtgd .content .giftcard .lint .gift-title {
+    width: 62px;
+    padding-left: 30px;
+    line-height: 40px;
+}
+
+.gtgd .content .giftcard .lint .greetings {
+    border: 1px solid #eee;
+    width: 526px;
+    padding: 15px;
+    line-height: 1.5;
+    resize: none;
+    outline: 0;
+}
+
+.gtgd .content .giftcard .lint #refresh {
+    position: absolute;
+    right: 14px;
+    bottom: 25px;
+    cursor: pointer;
+}
+
+.gtgd .content .giftcard .lint #refresh .icon-refresh {
+    margin-left: 5px;
+    width: 18px;
+    height: 18px;
+    background-position: -217px -49px;
+}
+
+.gtgd .content .giftcard .lint .gift-title {
+    width: 62px;
+    padding-left: 30px;
+    line-height: 40px;
+}
+
+.gtgd .content .giftcard .lint .bress-box {
+    position: relative;
+    width: 528px;
+    margin-right: 28px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.gtgd .content .giftcard .lint .bress-box .bress-link {
+    position: absolute;
+    width: 2557px;
+    height: 40px;
+    left: 0;
+    top: 0;
+    color: #cdae7d;
+}
+
+.gtgd .content .giftcard .lint .bress-box .bress-link a {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #fff;
+    line-height: 1;
+    color: #cdae7d;
+}
+
+.gtgd .content .giftcard .lint .bress-box .bress-link a.borde {
+    border-color: #d1c0a5;
+}
+
+.gtgd .content .giftcard .lint .bress-box .bress-link a:hover {
+    color: #d93732;
+}
+
+#arrowRight {
+    position: absolute;
+    right: 2px;
+    top: 22px;
+    cursor: pointer;
+}
+
+.icon-arrow-giftR {
+    width: 11px;
+    height: 20px;
+    background-position: -205px -48px;
+}
+
+#gift_from {
+    width: 546px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    border: 1px solid #eee;
+}
+
+.gtgd .content .giftcard .contbox {
+    margin-top: 5px;
+}
+
+.gtgd .content .giftcard .pack_title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.gtgd .content .giftcard .radio-box {
+    margin-top: 20px;
+}
+
+.gtgd .content .giftcard .radio {
+    cursor: pointer;
+}
+
+
+/* #inb{
+    margin-top: -3px; 
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:10px; 
+} */
+
+.gtgd .content .giftcard .input {
+    margin-top: -3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.gtgd .content .giftcard .form-btn {
+    padding-top: 10px;
+}
+
+.gtgd .content .giftcard .btn-red {
+    display: inline-block;
+    padding: 10px 32px;
+    color: #fff;
+    background: #d93732;
+    border-radius: 3px;
+}
+
+.gtgd .content .giftcard .btn-red:hover {
+    background: #ed3d38;
+}
+
+
+/* 填写贺卡结束 */

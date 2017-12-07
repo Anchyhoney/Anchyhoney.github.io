@@ -1,188 +1,750 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  <title>我的世界</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这是我的第一个博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的世界">
-<meta property="og:url" content="https://anchyhoney.github.io/index.html">
-<meta property="og:site_name" content="我的世界">
-<meta property="og:description" content="这是我的第一个博客">
-<meta property="og:locale" content="zh-cn">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的世界">
-<meta name="twitter:description" content="这是我的第一个博客">
-  
-    <link rel="alternate" href="/atom.xml" title="我的世界" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>礼无忧网,礼物网</title>
+    <!--[if lt IE 8]>
+        <script>
+        setTimeout(function(){  
+            window.location.href = './upgrade.html';  
+        },10);
+        </script>
+    <![endif]-->
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/favicon.ico" >
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexBody.css">
+    <link rel="stylesheet" href="css/backtop.css">
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">我的世界</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">我的世界</a>
-        </h2>
-      
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="center clearfix">
+            <div class="logo fl">
+                <a href="##">礼无忧首页</a>
+            </div>
+            <div class="category fl">
+                <a href="##">
+                    礼物分类 
+                    <i class="icon-list"></i>
+                </a>
+                <div class="category-pop">
+                    <ul>
+                        <li><a href="##">少女心饰</a></li>
+                        <li><a href="##">萌萌美物</a></li>
+                        <li><a href="##">为爱停留</a></li>
+                        <li><a href="##">潮流时尚</a></li>
+                        <li><a href="##">科技达人</a></li>
+                        <li><a href="##">幸福烙印</a></li>
+                        <li><a href="##">爱情保鲜</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="clearfix">
+                    <li class="fst" id="queryBoxIndex">
+                        <a href="javascipt:;">送礼导航</a>
+                        <div class="query-box" id="queryBox">
+                            <div class="center">
+                                <div class="query">
+                                    <ul class="bottomLine clearfix">
+                                        <li class="fst">送给谁：</li>
+                                        <li><a href="javascript:;">不限</a></li>
+                                        <li><a href="javascript:;">公主女票</a></li>
+                                        <li><a href="javascript:;">欧巴男票</a></li>
+                                        <li><a href="javascript:;">潮爸辣妈</a></li>
+                                        <li><a href="javascript:;">兄弟闺蜜</a></li>
+                                        <li><a href="javascript:;">熊孩纸</a></li>
+                                        <li><a href="javascript:;">生意伙伴</a></li>
+                                        <li><a href="javascript:;">致谢恩师</a></li>
+                                    </ul>
+                                    <ul class="clearfix">
+                                        <li class="fst">为啥送：</li>
+                                        <li><a href="javascript:;">不限</a></li>
+                                        <li><a href="javascript:;">表白撩妹</a></li>
+                                        <li><a href="javascript:;">过生日</a></li>
+                                        <li><a href="javascript:;">圣诞节</a></li>
+                                        <li><a href="javascript:;">情人节</a></li>
+                                        <li><a href="javascript:;">去求婚</a></li>
+                                        <li><a href="javascript:;">纪念日</a></li>
+                                        <li><a href="javascript:;">想送任性</a></li>
+                                    </ul>
+                                </div>
+                                <div class="btn">
+                                    <a href="javascript:;">搜索</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="./category.html">创意礼物</a></li>
+                    <li><a href="./category1.html">新品上架</a></li>
+                    <li><a href="##">中秋节礼物</a></li>
+                </ul>
+            </div>
+            <div class="operate fr">
+                <a href="user.html" class="user" id="user">
+                    <i class="icon-user"></i>
+                </a>
+                <div class="user-box" id="user-box">
+                    <i class="icon-operate"></i>
+                    <ul>
+                        <li class="fst">
+                            <a href="##">登录</a>
+                            /
+                            <a href="##">注册</a>
+                        </li>
+                        <li class="userName">
+                            US00005FF12
+                        </li>
+                        <li><a href="##">浏览历史</a></li>
+                        <li><a href="##">我的订单</a></li>
+                        <li><a href="##">我的收藏</a></li>
+                        <li><a href="##">退出登录</a></li>
+                    </ul>
+                </div>
+                <a href="./flow.html" class="cart" id="cart">
+                    <i class="icon-cart"></i>
+                    <span class="count">3</span>
+                </a>
+                <div class="user-cart" id="cart-box">
+                    <i class="icon-operate"></i>
+                    <p>购物车中还没有商品，赶紧选购吧！</p>
+                    <table>
+                        <tr class="gds">
+                            <td>
+                                <a href="##">
+                                    <img src="./images/cart-img.jpg">
+                                </a>
+                            </td>
+                            <td class="txt">
+                                <a href="##">你是我的宇宙</a><br>
+                                "礼物颜色:红色"<br>
+                                "礼物款式:红灯塔款"<br>
+                            </td>
+                            <td class="right">
+                                X<span class="count">1</span>
+                                <br>
+                                ￥<span class="price">300.0</span>
+                                <br>
+                                <a href="javascript:;" class="remove_item">删除</a>
+                            </td>
+                        </tr>
+                        <tr class="gds">
+                                <td>
+                                    <a href="##">
+                                        <img src="./images/cart-img.jpg">
+                                    </a>
+                                </td>
+                                <td class="txt">
+                                    <a href="##">你是我的宇宙</a><br>
+                                    "礼物颜色:红色"<br>
+                                    "礼物款式:红灯塔款"<br>
+                                </td>
+                                <td class="right">
+                                    X<span class="count">2</span>
+                                    <br>
+                                    ￥<span class="price">400.0</span>
+                                    <br>
+                                    <a href="javascript:;" class="remove_item">删除</a>
+                                </td>
+                            </tr>
+                        <tr class="gds">
+                            <td>
+                                <a href="##">
+                                    <img src="./images/cart-img.jpg">
+                                </a>
+                            </td>
+                            <td class="txt">
+                                <a href="##">你是我的宇宙</a><br>
+                            </td>
+                            <td class="right">
+                                X<span class="count">3</span>
+                                <br>
+                                ￥<span class="price">500.0</span>
+                                <br>
+                                <a href="javascript:;" class="remove_item">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="clearfix">
+                                    <span class="fl">
+                                        共计<span id="shopCount">3</span>件商品<br>
+                                        <b>
+                                            合计:<span id="allPrice">￥599.0</span>
+                                        </b>
+                                    </span>
+                                    <a href="##" class="fr btn">去购物车结算</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="search fr">
+                <input type="text" name="search">
+                <a href="javascript:;" class="icon-search"></a>
+            </div>
+        </div>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://anchyhoney.github.io"></form>
-      </div>
+    <!-- 头部结束 -->
+    <!-- banner开始 -->
+    <div class="banner" id="banner">
+        <div class="box">
+            <img src="./images/banner1.jpg">
+            <img src="./images/banner2.jpg">
+            <img src="./images/banner3.jpg">
+            <img src="./images/banner4.jpg">
+            <img src="./images/banner5.jpg">
+            <ul class="dot"></ul>
+        </div>
     </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/01/hello-world/" class="article-date">
-  <time datetime="2017-12-01T02:11:04.107Z" itemprop="datePublished">2017-12-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/01/hello-world/">Hello World</a>
-    </h1>
-  
+    <!-- banner结束 -->
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
+    <!-- services开始 -->
+    <div class="services">
+        <ul class="center clearfix">
+            <li>
+                <i class="servicesImg diy"></i>
+                专属定制服务
+            </li>
+            <li>
+                <i class="servicesImg laser"></i>
+                激光镭雕工艺
+            </li>
+            <li>
+                <i class="servicesImg card"></i>
+                免费代写贺卡
+            </li>
+            <li>
+                <i class="servicesImg design"></i>
+                精心专业设计
+            </li>
+        </ul>
     </div>
-    <footer class="article-footer">
-      <a data-url="https://anchyhoney.github.io/2017/12/01/hello-world/" data-id="cjanb769p0000ekmdiftrmwcz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+    <!-- services结束 -->
 
-
-  
-
-</section>
+    <!-- indexList开始 -->
+    <div class="indexList">
+        <!-- 分类列表开始 -->
+        <div class="categoryList center">
+            <ul class="clearfix">
+                <li>
+                    <a href="##">
+                        <img src="./images/indexList_1.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./images/indexList_1.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./images/indexList_1.jpg">
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./images/indexList_1.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 分类列表结束 -->
         
-          <aside id="sidebar">
-  
-    
+        <!-- 新品推荐开始 -->
+        <div class="newList center">
+            <div class="secondTitle">
+                <h3 class="fl">新品推荐</h3>
+                <a class="fr" href="##">查看更多</a>
+            </div>
+            <div class="newContent">
+                <p>
+                    <a href="##">
+                        <img src="./images/newList1.jpg">
+                    </a>
+                    <a href="##">
+                        <img src="./images/newList2.jpg">
+                    </a>
+                    <a href="##">
+                        <img src="./images/newList3.jpg">
+                    </a>
+                    <a href="##">
+                        <img src="./images/newList4.jpg">
+                    </a>
+                </p>
+                <p>
+                    <a href="##">
+                        <img src="./images/newList5.jpg">
+                    </a>
+                    <a href="##">
+                        <img src="./images/newList6.jpg">
+                    </a>
+                    <a href="##">
+                        <img src="./images/newList7.jpg">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- 新品推荐结束 -->
 
-  
-    
+        <!-- 生日礼物开始 -->
+        <div class="birthdayList center">
+            <div class="secondTitle">
+                <h3 class="fl">生日礼物</h3>
+                <a class="fr" href="##">查看更多</a>
+            </div>
+            <div class="birthdayContent clearfix">
+                <div class="topic fl">
+                    <a href="##">
+                        <img src="./images/birthdayLeft.jpg">
+                    </a>
+                </div>
+                <ul class="fr birthday">
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 生日礼物结束 -->
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li></ul>
+        <!-- 生日礼物开始 -->
+        <div class="birthdayList center">
+            <div class="secondTitle">
+                <h3 class="fl">生日礼物</h3>
+                <a class="fr" href="##">查看更多</a>
+            </div>
+            <div class="birthdayContent clearfix">
+                <div class="topic fl">
+                    <a href="##">
+                        <img src="./images/birthdayLeft.jpg">
+                    </a>
+                </div>
+                <ul class="fr birthday">
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="birthdayImg">
+                            <a href="##">
+                                <img src="./images/birthdatList.jpg">
+                            </a>
+                        </p>
+                        <p class="birthdayName">
+                            <a href="##">花儿朵朵开</a>
+                        </p>
+                        <p class="birthdayPrice">
+                            ￥<span>999.0</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 生日礼物结束 -->
+
+        <!-- 热评商品开始 -->
+        <div class="hotList center">
+            <div class="title">
+                热评商品
+                <img src="./images/line.png">
+            </div>
+            <div class="content">
+                <ul class="clearfix">
+                    <li class="fl">
+                        <p class="img">
+                            <a href="##">
+                                <img src="./images/bottomList.jpg">
+                            </a>
+                        </p>
+                        <div class="goods-cont">
+                            <p class="title">
+                                <a href="##">外观漂亮，晚上打开以后充满神秘感，灯光可以随节奏变换，开关也很方便，非常推荐购买。</a>
+                            </p>
+                            <p class="user">来自于abcd的评价</p>
+                            <p class="price">魔幻神灯 / ￥299.0</p>
+                        </div>
+                    </li>
+                    <li class="fl">
+                        <p class="img">
+                            <a href="##">
+                                <img src="./images/bottomList.jpg">
+                            </a>
+                        </p>
+                        <div class="goods-cont">
+                            <p class="title">
+                                <a href="##">外观漂亮，晚上打开以后充满神秘感，灯光可以随节奏变换，开关也很方便，非常推荐购买。</a>
+                            </p>
+                            <p class="user">来自于abcd的评价</p>
+                            <p class="price">魔幻神灯 / ￥299.0</p>
+                        </div>
+                    </li>
+                    <li class="fl">
+                        <p class="img">
+                            <a href="##">
+                                <img src="./images/bottomList.jpg">
+                            </a>
+                        </p>
+                        <div class="goods-cont">
+                            <p class="title">
+                                <a href="##">外观漂亮，晚上打开以后充满神秘感，灯光可以随节奏变换，开关也很方便，非常推荐购买。</a>
+                            </p>
+                            <p class="user">来自于abcd的评价</p>
+                            <p class="price">魔幻神灯 / ￥299.0</p>
+                        </div>
+                    </li>
+                    <li class="fl">
+                        <p class="img">
+                            <a href="##">
+                                <img src="./images/bottomList.jpg">
+                            </a>
+                        </p>
+                        <div class="goods-cont">
+                            <p class="title">
+                                <a href="##">外观漂亮，晚上打开以后充满神秘感，灯光可以随节奏变换，开关也很方便，非常推荐购买。</a>
+                            </p>
+                            <p class="user">来自于abcd的评价</p>
+                            <p class="price">魔幻神灯 / ￥299.0</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 热评商品结束 -->
+
     </div>
-  </div>
+    <!-- indexList结束 -->
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2017/12/01/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
+    <!-- 尾部开始 -->
+    <div class="footer">
+        <div class="center">
+            <ul class="top clearfix">
+                <li class="logo"><i class="bottomLogo"></i></li>
+                <li class="text"><img src="./images/bottomText.png"></li>
+                <li class="our">
+                    <p>关注我们</p>
+                    <p class="icon">
+                        <a href="##" class="sina"></a>
+                        <a href="##" class="tencent"></a>
+                        <a href="##" class="wechat">
+                            <span></span>
+                        </a>
+                    </p>
+                </li>
+                <li class="phone">
+                    <p class="num">400-611-2156</p>
+                    <p class="time">周一至周日 8:00-24:00</p>
+                    <a href="##" class="qq">QQ在线交谈</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <ul class="center clearfix icons">
+                <li class="first">
+                    <i class="icon1"></i>
+                    30天免费退换货
+                </li>
+                <li>
+                    <i class="icon2"></i>
+                    100%正品保证
+                </li>
+                <li>
+                    <i class="icon3"></i>
+                    全场免运费
+                </li>
+                <li>
+                    <i class="icon4"></i>
+                    提供礼品级包装
+                </li>
+            </ul>
+            <div class="center link clearfix">
+                <div class="fl">
+                    <p class="left">
+                        <span>&copy; liwuyou.com</span>
+                        <a href="##"><span>粤ICP备10222238号-1</span></a>
+                        
+                    </p>
+                </div>
+                <div class="fr">
+                    <p class="right">
+                        <a href="./acticle.html">关于我们</a><span>|</span>
+                        <a href="##">帮助中心</a><span>|</span>
+                        <a href="##">人才招聘</a><span>|</span>
+                        <a href="##">售后服务</a><span>|</span>
+                        <a href="##">配送与验收</a><span>|</span>
+                        <a href="##">联系我们</a>
+                    </p>
+                </div>
+            </div>
+            <div class="center clearfix friends">
+                <div class="friendLink fl">
+                    <a href="javascript:;">友情链接</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                </div>
+                <div class="img fr">
+                    <a href="##">
+                        <img src="./images/newGovIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <!-- 尾部结束 -->
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2017 complicated<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    <!-- 回到顶部开始 -->
+    <div class="backTop">
+        <a href="##">
+            <i class="qq"></i>
+        </a>
+        <a href="##" class="back" id="backTop">
+            <i class="top"></i>
+        </a>
     </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+    <!-- 回到顶部结束 -->
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-  </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/indexBody.js"></script>
+    <script src="js/backTop.js"></script>
 </body>
 </html>

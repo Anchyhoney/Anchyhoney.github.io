@@ -1,0 +1,137 @@
+body{
+	color:#333;
+	padding: 0;
+	margin: 0;
+    font: 14px/1.5 Arial,'Microsoft Yahei',STHeiti,sans-serif;
+}
+dd, dl, dt, h1, h2, h3, h4, h5, h6, li, ol, p, ul {
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear:both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}
+.clear:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+a{
+	text-decoration: none;
+}
+.f16 {
+    font-size: 16px;
+}
+.rel {
+    position: relative;
+}
+.tc{
+	text-align: center;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.lh1{
+	line-height: 1;
+}
+.liubai{
+		width: 100%;
+		height: 96px;
+		background-color:skyblue;
+}
+.bg-f5f5f5 {
+    background: #f5f5f5;
+}
+.f12{
+	font-size: 12px;
+}
+.currentloc{
+	padding: 20px;
+	line-height: 22px;
+}
+.currentloc a,.currentloc span{
+	font-size: 12px;
+	color:#333;
+	display: inline-block;
+}
+.center{
+	width: 1200px;
+	margin: 0 auto;
+}
+.qqbtn{
+	text-align: center;
+	width: 86px;
+	height: 18px;
+	border: 2px solid #979795;
+	border-radius: 22px;
+	line-height: 18px;
+}
+.currentloc span{
+	padding: 0 10px;
+}
+/* qq等联系方式鼠标移入样式 */
+.qqbtn:hover{
+	color:#d93732;
+	border-color:#d93732; 
+}
+ a:hover {
+    color: #d93732;
+}
+.message-box {
+    padding-bottom: 60px;
+}
+.message-box .center {
+    padding: 87px 60px;
+    width: 1080px;
+}
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+.bg-fff{
+	background-color: #fff;
+}
+.p-l-50 {
+    padding-left: 50px;
+}
+.f-78ac0a {
+    color: #78ac0a;
+}
+.f24 {
+    font-size: 24px;
+}
+.m-t-10 {
+    margin-top: 10px;
+}
+.message-cont {
+    padding: 10px 0 30px 50px;
+}
+.f14 {
+    font-size: 14px;
+}
+.message-url {
+    padding: 30px 50px;
+}
+.b-t-1 {
+    border-top: 1px solid #ededed;
+}
+a{
+	color:#333;
+}
+.message-url {
+    padding: 30px 50px;
+}
+.message-url a{
+	margin-right: 20px;
+}

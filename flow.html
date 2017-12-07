@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <!--[if lt IE 8]>
+        <script>
+        setTimeout(function(){  
+            window.location.href = './upgrade.html';  
+        },10);
+        </script>
+    <![endif]-->
+    <link rel="Shortcut Icon" type="image/x-icon" href="./images/favicon.ico" >
+    <link rel="stylesheet" href="./css/flow.css">
+</head>
+
+<body>
+    <!-- 头部开始 -->
+     <div class="header">
+        <div class="center clearfix">
+            <div class="logo fl">
+                <a href="./index.html">礼无忧首页</a>
+            </div>
+            <span class="dib">我的购物车</span>
+           <div class="cart-hd fr">
+                <span class="f-b28850">US00005FF21</span>
+                <a href="##" class="m-l">个人中心</a>
+                <a href="##" class="m-l">我的订单</a>
+                <a href="##" class="m-l">浏览历史</a>
+                <a href="##" class="m-l">退出登录</a>
+           </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+    <!-- 中间内容 -->
+    <div class="flow">
+        <div class="flow-curr clearfix">
+            <div class="center">
+                <!-- 左 -->
+                <div class="fl">
+                    <a href="##">首页</a>
+                    <span class="sp">/</span>购物车
+                </div>
+                <!-- 右 -->
+                <a href="##" class="ct-a fr">QQ在线交谈</a>
+                <span class="ct-sp fr">服务热线：400-611-2156 (8:00－24:00)</span>
+            </div>
+        </div>
+        <div class="fb-center">
+            <!-- 商品信息 -->
+            <table>
+                <!-- thead -->
+                <thead>
+                    <tr>
+                        <td width="50%" class="info">商品信息</td>
+                        <td width="10%">单价</td>
+                        <td width="10%">数量</td>
+                        <td width="10%">库存</td>
+                        <td width="10%">小计</td>
+                        <td width="10%">操作</td>
+                    </tr>
+                </thead>
+                <!-- tbody -->
+                <tbody id="cart_list">
+                    <tr>
+                        <td class="td">
+                            <a href="##">
+                                <img src="./images/s.jpg" alt="" class="dib">
+                            </a>
+                            <div class="dib">
+                                <p>
+                                    <a href="##">神烦狗</a>
+                                </p>
+                                <p>
+                                    <span>
+                                        礼物款式:秋田款 （预售10.7发货）
+                                        <br> 个性定制:直接购买
+                                    </span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>￥98.0</td>
+                        <td>
+                            <div class="dib count-box">
+                                <a href="javascript:void(0)" class="icon-bgr icon-sub"></a>
+                                <input type="text" value="1" class="icon-number">
+                                <a href="javascript:void(0)" class="icon-bgr icon-add"></a>
+                            </div>
+                        </td>
+                        <td>有库存</td>
+                        <td class="unit"><span>￥98.0</span></td>
+                        <td>
+                            <a href="javascript:void(0)" class="icon-bgr icon-delete"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td">
+                            <a href="##">
+                                <img src="./images/s.jpg" alt="" class="dib">
+                            </a>
+                            <div class="dib">
+                                <p>
+                                    <a href="##">神烦狗</a>
+                                </p>
+                                <p>
+                                    <span>
+                                        礼物款式:秋田款 （预售10.7发货）
+                                        <br> 个性定制:直接购买
+                                    </span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>￥98.0</td>
+                        <td>
+                            <div class="dib count-box">
+                                <a href="javascript:void(0)" class="icon-bgr icon-sub"></a>
+                                <input type="text" value="1" class="icon-number">
+                                <a href="javascript:void(0)" class="icon-bgr icon-add"></a>
+                            </div>
+                        </td>
+                        <td>有库存</td>
+                        <td class="unit"><span>￥98.0</span></td>
+                        <td>
+                            <a href="javascript:void(0)" class="icon-bgr icon-delete"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td">
+                            <a href="##">
+                                <img src="./images/s.jpg" alt="" class="dib">
+                            </a>
+                            <div class="dib">
+                                <p>
+                                    <a href="##">神烦狗</a>
+                                </p>
+                                <p>
+                                    <span>
+                                        礼物款式:秋田款 （预售10.7发货）
+                                        <br> 个性定制:直接购买
+                                    </span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>￥98.0</td>
+                        <td>
+                            <div class="dib count-box">
+                                <a href="javascript:void(0)" class="icon-bgr icon-sub"></a>
+                                <input type="text" value="1" class="icon-number">
+                                <a href="javascript:void(0)" class="icon-bgr icon-add"></a>
+                            </div>
+                        </td>
+                        <td>有库存</td>
+                        <td class="unit"><span>￥98.0</span></td>
+                        <td>
+                            <a href="javascript:void(0)" class="icon-bgr icon-delete"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td">
+                            <a href="##">
+                                <img src="./images/s.jpg" alt="" class="dib">
+                            </a>
+                            <div class="dib">
+                                <p>
+                                    <a href="##">神烦狗</a>
+                                </p>
+                                <p>
+                                    <span>
+                                        礼物款式:秋田款 （预售10.7发货）
+                                        <br> 个性定制:直接购买
+                                    </span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>￥98.0</td>
+                        <td>
+                            <div class="dib count-box">
+                                <a href="javascript:void(0)" class="icon-bgr icon-sub"></a>
+                                <input type="text" value="1" class="icon-number">
+                                <a href="javascript:void(0)" class="icon-bgr icon-add"></a>
+                            </div>
+                        </td>
+                        <td>有库存</td>
+                        <td class="unit"><span>￥98.0</span></td>
+                        <td>
+                            <a href="javascript:void(0)" class="icon-bgr icon-delete"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td">
+                            <a href="##">
+                                <img src="./images/s.jpg" alt="" class="dib">
+                            </a>
+                            <div class="dib">
+                                <p>
+                                    <a href="##">神烦狗</a>
+                                </p>
+                                <p>
+                                    <span>
+                                        礼物款式:秋田款 （预售10.7发货）
+                                        <br> 个性定制:直接购买
+                                    </span>
+                                </p>
+                            </div>
+                        </td>
+                        <td>￥98.0</td>
+                        <td>
+                            <div class="dib count-box">
+                                <a href="javascript:void(0)" class="icon-bgr icon-sub"></a>
+                                <input type="text" value="1" class="icon-number">
+                                <a href="javascript:void(0)" class="icon-bgr icon-add"></a>
+                            </div>
+                        </td>
+                        <td>有库存</td>
+                        <td class="unit"><span>￥98.0</span></td>
+                        <td>
+                            <a href="javascript:void(0)" class="icon-bgr icon-delete"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 继续购物 -->
+            <div class="fb-b clearfix">
+                <!-- fl -->
+                <div class="fb-fl">
+                    <a href="##" class="fb-fl-a">
+                        <i class="icon-bgr icon-page-l"></i>
+                                继续购物
+                    </a>
+                </div>
+                <!-- fr -->
+                <div class="fb-fr">
+                    <span class="">共一件商品</span>
+                    <span class="fb-fr-sp">
+                        合计:
+                        <b class="fb-fr-b">￥98.0</b>
+                    </span>
+                    <a href="##" class="fb-fr-a">去结账</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+     <!-- 尾部开始 -->
+     <div class="footer">
+        <div class="center">
+            <ul class="top clearfix">
+                <li class="logo"><i class="bottomLogo"></i></li>
+                <li class="text"><img src="./images/bottomText.png"></li>
+                <li class="our">
+                    <p>关注我们</p>
+                    <p class="icon">
+                        <a href="##" class="sina"></a>
+                        <a href="##" class="tencent"></a>
+                        <a href="##" class="wechat">
+                            <span></span>
+                        </a>
+                    </p>
+                </li>
+                <li class="phone">
+                    <p class="num">400-611-2156</p>
+                    <p class="time">周一至周日 8:00-24:00</p>
+                    <a href="##" class="qq">QQ在线交谈</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <ul class="center clearfix icons">
+                <li class="first">
+                    <i class="icon1"></i>
+                    30天免费退换货
+                </li>
+                <li>
+                    <i class="icon2"></i>
+                    100%正品保证
+                </li>
+                <li>
+                    <i class="icon3"></i>
+                    全场免运费
+                </li>
+                <li>
+                    <i class="icon4"></i>
+                    提供礼品级包装
+                </li>
+            </ul>
+            <div class="center link clearfix">
+                <div class="fl">
+                    <p class="left">
+                        <span>&copy; liwuyou.com</span>
+                        <a href="##"><span>粤ICP备10222238号-1</span></a>
+                        
+                    </p>
+                </div>
+                <div class="fr">
+                    <p class="right">
+                        <a href="##">关于我们</a><span>|</span>
+                        <a href="##">帮助中心</a><span>|</span>
+                        <a href="##">人才招聘</a><span>|</span>
+                        <a href="##">售后服务</a><span>|</span>
+                        <a href="##">配送与验收</a><span>|</span>
+                        <a href="##">联系我们</a>
+                    </p>
+                </div>
+            </div>
+            <div class="center clearfix friends">
+                <div class="friendLink fl">
+                    <a href="javascript:;">友情链接</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚摄影</a>
+                    <a href="##">婚纱摄影</a>
+                    <a href="##">婚纱摄影</a>
+                </div>
+                <div class="img fr">
+                    <a href="##">
+                        <img src="./images/newGovIcon.gif" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部结束 -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/flow.js"></script>
+</body>
+
+</html>

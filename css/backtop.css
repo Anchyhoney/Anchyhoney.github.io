@@ -1,0 +1,40 @@
+.backTop{
+    width: 60px;
+    position: fixed;
+    right: 60px;
+    bottom: 10%;
+    z-index: 50;
+    text-align: center;
+    font-size: 0;
+    display: none;
+}
+.backTop a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #656766;
+}
+.backTop .qq{
+    display: inline-block;
+    width: 35px;
+    height: 34px;
+    vertical-align: middle;
+    background: url("../images/sprite.png") -190px -77px;
+}
+.backTop .back{
+    margin-top: 10px;
+}
+.backTop .top{
+    display: inline-block;
+    width: 35px;
+    vertical-align: middle;
+    height: 18px;
+    background: url("../images/sprite.png") -190px -112px;
+<<<<<<< HEAD
+=======
+}
+.backTop a:hover{
+    opacity: .6;
+>>>>>>> f9323e0fc05de34b45ce5afc3f16f30ac2be9225
+}

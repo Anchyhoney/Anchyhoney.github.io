@@ -1,0 +1,486 @@
+body {
+    background: #f5f5f5;
+}
+
+.birthday .index a {
+    display: inline-block;
+    font-size: 12px;
+    color: #666666;
+    padding: 0 2px;
+}
+
+.birthday .index span {
+    display: inline-block;
+    color: #666666;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.currentloc {
+    background: url(../img/Valentine.png) center center no-repeat;
+    height: 550px;
+    background-color: #f5f5f5;
+}
+
+.birthday {
+    width: 100%;
+    height: 40px;
+    line-height: 21px;
+}
+
+.index {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.birthday .phone {
+    background: red;
+}
+
+.qq-btn {
+    width: 86px;
+    height: 18px;
+    border: 2px solid #979795;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    line-height: 18px;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
+}
+
+.f-phone {
+    display: inline-block;
+    padding: 0 10px;
+    color: #666;
+    font-size: 12px;
+}
+
+.f-a {
+    margin-right: 100px;
+    line-height: 22px;
+}
+
+.christmas-img {
+    position: relative;
+    height: 500px;
+    margin-top: 21px;
+}
+
+.christmas-img .give-him {
+    display: block;
+    width: 280px;
+    height: 84px;
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+    top: 380px;
+}
+
+.christmas-img .give-her {
+    height: 84px;
+    width: 270px;
+    position: absolute;
+    margin-left: -475px;
+    left: 50%;
+    display: none;
+    top: 380px;
+}
+
+
+/* middle商品部分 */
+
+.cat-list {
+    padding: 70px 0 60px;
+}
+
+.cat-list li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 386px;
+    height: 405px;
+    float: left;
+    background: #fff;
+    padding: 43px;
+    margin-bottom: 21px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.cat-list .first-col {
+    display: block;
+    width: 300px;
+    text-align: center;
+}
+
+.cat-list li a img {
+    display: block;
+    width: 240px;
+    height: 240px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.cat-list li img {
+    vertical-align: middle;
+    position: absolute;
+}
+
+.cat-list li a img.cont {
+    position: absolute;
+    left: 30px;
+    top: 0px;
+    display: block;
+    z-index: 1;
+}
+
+.cat-list .l-30 {
+    position: absolute;
+    left: 30px;
+}
+
+.cat-list .link-img {
+    display: block;
+    width: 240px;
+    height: 240px;
+    position: relative;
+}
+
+.cat-list .com-diy .can-diy {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 50px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    border: 1px solid #6e6e6e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: 14px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.cat-list .com-diy .can_diy {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 44px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #6e6e6e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: 12px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.cat-list .com-diy .can_diy {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 50px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    border: 1px solid #6e6e6e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 0 3px;
+    font-size: 14px;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.cat-list .dn {
+    opacity: 1;
+    position: absolute;
+    left: 30px;
+}
+
+.cat-list .diypic {
+    z-index: 1;
+    opacity: 1;
+}
+
+.c-diypic {
+    z-index: 2;
+    opacity: 1;
+    display: block;
+}
+
+.cat-list .can-diy.isdiy {
+    border-color: #e45b55;
+    background: #e45b55;
+    color: #fff;
+}
+
+.cat-list li .cont-focus {
+    opacity: 0;
+}
+
+.c-focus {
+    display: block;
+    z-index: 2;
+    opacity: 0;
+}
+
+.cat-list li .cat-name {
+    max-width: 225px;
+    margin-top: 28px;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cat-list li .cat-name a {
+    font-size: 18px;
+    font-weight: 700;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    -moz-transition: all .4s;
+    transition: all .4s;
+}
+
+.cat-list li .cat-name span {
+    color: #d93732;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cat-list .com-diy {
+    display: block;
+    max-width: 300px;
+    height: 24px;
+    text-align: right;
+    line-height: 24px;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* 送礼策划 */
+
+.cat-article {
+    height: 260px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 50px 0 100px 0;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+
+.cat-article .more {
+    position: absolute;
+    right: 85px;
+    bottom: 40px;
+}
+
+.cat-article .icon-bg {
+    display: inline-block;
+    width: 17px;
+    height: 10px;
+    background: url(../images/sprite.png);
+    margin-left: 5px;
+    margin-top: -3px;
+    background-position: -232px -161px;
+    vertical-align: middle;
+}
+
+.cat-article .clear {
+    height: 84px;
+}
+
+.cat-article .clear .tit {
+    width: 280px;
+    text-align: center;
+}
+
+.cat-article .clear .tit p {
+    line-height: 1;
+    font-size: 22px;
+    text-align: center;
+}
+
+.cat-article .clear .tit .pic {
+    margin-top: 15px;
+}
+
+.cat-article .clear .tit-right {
+    width: 810px;
+    margin-right: 90px;
+}
+
+.cat-article .clear .tit-right h1 {
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cat-article .clear .tit-right .word {
+    margin-top: 10px;
+}
+
+.cat-article .clear .tit-right strong {
+    text-indent: 28px;
+}
+
+.cat-article .clear .tit-right span {
+    color: #333;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.festival {
+    width: 1062px;
+    height: 124px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.festival p {
+    font-size: 16px;
+    margin: 70px 0 0 30px;
+}
+
+.festival .fed-content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 1026px;
+    height: 90px;
+    border: 1px solid #e2e2e2;
+    padding: 20px 30px;
+    margin: 10px 0 0 30px;
+}
+
+.festival .fed-content a {
+    margin-right: 15px;
+    display: inline-block;
+    line-height: 24px;
+}
+
+.festival .up {
+    position: absolute;
+    bottom: 40px;
+    right: 85px;
+}
+
+.festival .up .icon-bg {
+    display: inline-block;
+    width: 17px;
+    height: 10px;
+    background: url(../images/sprite.png);
+    margin-left: 5px;
+    margin-top: -3px;
+    background-position: -232px -151px;
+    vertical-align: middle;
+}
+
+.footer {
+    background: #fff;
+    margin-top: 50px;
+}
+
+
+/* 鼠标移入 */
+
+.birthday .index a:hover {
+    color: #d93732;
+}
+
+.birthday .index span:hover {
+    color: #aedacc;
+}
+
+.birthday .qq-btn:hover {
+    border-color: #d93732;
+    color: #d93732;
+}
+
+.cat-list li:hover {
+    -webkit-box-shadow: 0 0 10px 1px #aedacc;
+    -moz-box-shadow: 0 0 10px 1px #aedacc;
+    box-shadow: 0 0 10px 1px #aedacc;
+    color: #d93732;
+}
+
+.cat-list li .cat-name a:hover {
+    color: #d93732;
+}
+
+.cat-list li img:hover {
+    margin-top: 5px;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cat-list li .fb:hover {
+    color: #d93732;
+}
+
+.cat-list .can-diy:hover {
+    border-color: #e85c5d;
+    color: #e85c5d;
+}
+
+.cat-list .can-diy:hover {
+    border-color: #e85c5d;
+    color: #e85c5d;
+}
+
+.cat-list .can_diy:hover {
+    border-color: #e85c5d;
+    color: #e85c5d;
+}
+
+.cat-list .isdiy:hover {
+    color: #Fff;
+}
+
+.article .article-r .word a:hover {
+    color: #d93732;
+}
+
+.article .more:hover {
+    color: #d93732;
+}
+
+.article .up:hover {
+    color: #d93732;
+}
+
+.festival .fed-content a:hover {
+    color: #d93732;
+}

@@ -1,0 +1,22 @@
+;(function($){
+    $("#submit").on("click",function(){
+        $("#getPassword").submit();
+    });
+    $("#getPassword").validate({
+        errorPlacement:function(error,ele){
+            ele.parent().next().append(error);
+        },
+        rules:{
+            phone_num:{
+                required:true,
+                isPhone:true,
+            }
+        },
+        messages:{
+            phone_num:{
+                required:"请输入手机号",
+                isPhone:"手机号码不正确",
+            }
+        }
+    })
+}(jQuery))

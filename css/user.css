@@ -1,0 +1,216 @@
+body{
+	color:#333;
+	padding: 0;
+	margin: 0;
+    font: 14px/1.5 Arial,'Microsoft Yahei',STHeiti,sans-serif;
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear:both;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}
+a{
+	text-decoration: none;
+}
+/* 登陆注册页面  */	
+.md-box{
+		width: 100%;
+		height: 766px;
+		background:url(../img/login_bg1.jpg) no-repeat;
+	}
+/* qq等联系方式 */
+.currentloc{
+	padding: 20px;
+	line-height: 22px;
+}
+.currentloc a,.currentloc span{
+	font-size: 12px;
+	color:#666;
+	float: right;
+	display: inline-block;
+}
+.center{
+	width: 1200px;
+	margin: 0 auto;
+}
+.qqbtn{
+	text-align: center;
+	width: 86px;
+	height: 18px;
+	border: 2px solid #979795;
+	border-radius: 22px;
+	line-height: 18px;
+}
+.currentloc span{
+	padding: 0 10px;
+}
+/* qq等联系方式鼠标移入样式 */
+.qqbtn:hover{
+	color:#d93732;
+	border-color:#d93732; 
+}
+.rel{
+	position: relative;
+}
+.md-login{
+	background: #fff;
+	width: 410px;
+	padding: 70px 90px;
+	position: absolute;
+	right: 50px;
+	top: 50px;
+}
+.form{
+	width: 410px;
+	height: 419px;
+}
+.line{
+	position: relative;
+	display: block;
+}
+.f-666{
+	color: #666;
+}
+.f-16{
+	font-size: 16px;
+}
+.lh1{
+	line-height: 1;
+}
+.f24{
+	font-size: 24px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.f-b28850{
+	color: #b28850;
+}
+.f-b28850:hover{
+	color:#d93732;
+}
+.m-t-28{
+	margin-top: 28px;
+}
+div{
+	display: block;
+}
+.db{
+	display: block;
+}
+.md-login .text{
+	width: 388px;
+	padding: 0 10px;
+	border: 1px solid #eee;
+	margin: 0;
+	height: 40px;
+	line-height: 40px;
+}
+.m-t-22{
+	margin-top: 22px;
+}
+.m-t-20{
+	margin-top: 20px;
+}
+.m-t-28{
+	margin-top: 28px;
+}
+.ani-bg{
+	transition-property:background;
+	transition-duration:.3s;
+}
+.md-login .btn-form:hover{
+	color: #fff;
+	background-color: #ed3d38;
+}
+.btn-form{
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	background-color:#d93732;
+	border-radius: 3px;
+}
+.full{
+	width: 100%;
+}
+.tc{
+	text-align: center;
+}
+.f-fff{
+	color: #fff;
+}
+a{
+	color:#333;
+	transition-property: color;
+	transition-duration: .3s;
+}
+a:hover{
+	color: #d93732;
+}
+.m-t-40{
+	margin-top: 40px;
+}
+.f-999{
+	color: #999;
+}
+.f16{
+	font-size: 16px;
+}
+.md-login .streak{
+	width: 126px;
+	height: 12px;
+	border-bottom: 1px solid #f4f4f4;
+}
+.lh2{
+	line-height: 2;
+}
+.dib{
+    display: inline-block;
+}
+.icon-login-qq{
+	background-position: -201px -267px;
+}
+.icon-bgr{
+	display: inline-block;
+	
+}
+.other-login a{
+    margin: 0 30px;
+}
+.icon-login-alipay, .icon-login-qq, .icon-login-sina{
+	width: 33px;
+	height: 33px;
+	border-radius: 33px;
+    vertical-align: middle;
+	background-color: #898989;
+}
+.icon-login-qq {
+	background:url(../img/jlt.png)  -201px -267px no-repeat;
+}
+.icon-login-sina {
+	background:url(../img/jlt.png)  -234px -267px no-repeat;
+    /* background-position: -234px -267px; */
+}
+.icon-login-alipay{
+	background:url(../img/jlt.png)  -267px -267px no-repeat;
+}
+ .icon-login-qq1:hover  .icon-login-qq{
+	background:url(../img/jlt.png)  -201px -234px no-repeat;
+}
+.icon-login-sina2:hover .icon-login-sina{
+	background:url(../img/jlt.png)  -234px -234px no-repeat;
+    /* background-position: -234px -267px; */
+}
+.icon-login-alipay3:hover .icon-login-alipay{
+	background:url(../img/jlt.png)  -267px -234px no-repeat;
+}

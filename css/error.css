@@ -1,0 +1,17 @@
+.not-find{
+    margin-top: 250px;
+    text-align: center;
+}
+.txt{
+    margin-top: 40px;
+    font-size: 18px;
+}
+.txt a{
+    margin-left: 10px;
+    color:#b28850;
+    outline: none;
+    text-decoration: none;
+}
+.txt a:hover{
+    color:#d93732;
+}

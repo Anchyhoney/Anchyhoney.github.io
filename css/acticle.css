@@ -1,0 +1,287 @@
+body{
+	margin: 0;
+	/*font-size: 0;*/
+}
+.currentloc{
+	padding: 20px;
+	height: 22px;
+	background: #f5f5f5;
+}
+.currentloc a:hover{
+	color: #d93732;
+}
+.currentloc .fr a:hover{
+	border:2px solid #d93732;
+}
+.center{
+	width: 1200px;
+	margin: 0 auto;
+}
+.clear:after{
+	content:'';
+	clear:both;
+	display: block;
+}
+.currentloc .fl{
+	float: left;
+}
+.currentloc .fr{
+	float: right;
+}
+.currentloc .fl a,span{
+	text-decoration: none;
+	/* color: #333; */
+	font-size: 12px;
+	line-height: 22px;
+}
+.currentloc .fl span{
+	padding:0 10px;
+}
+.currentloc .fl .alt{
+	padding: 0;
+}
+.currentloc .fr span{
+	font-size: 12px;
+	line-height: 22px;
+	color: #333;
+}
+.currentloc .fr a{
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	width: 86px;
+	border-radius: 22px;
+	border:2px solid #979795;
+	background: #f5f5f5;
+	font-size: 12px;
+	color: #666;
+}
+.account{
+	width:100%;
+	padding-bottom: 100px;
+	background: #f5f5f5;
+}
+.user-left{
+	padding:40px 0;
+	/*padding-right: 50px;*/
+	width: 230px;
+	min-height: 600px;
+	background: #fff;
+}
+.user-right{
+	width: 820px;
+	min-height: 600px;
+	background: #fff;
+	padding: 40px 65px;
+}
+.list{
+	list-style: none;
+	/*padding: 10px 40px 10px 0;*/
+	/*width: 140px;*/
+	padding-left: 50px;
+	display: none;
+}
+.user-left h3{
+	font-weight: normal;
+	font-size: 14px;
+	color: #333;
+	margin: 0;
+	padding-left: 50px;
+	position: relative;
+	cursor: pointer;
+}
+.user-left h3:hover{
+	color: #d93732;
+}
+.user-left h3 .close{
+	display: inline-block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: 40px;
+	top: 17px;
+	margin-top: -12px;
+	background: url("../images/sprite.png") -226px -77px;
+}
+.list li a{
+	line-height: 36px;
+	color: #666;
+}
+.user-right h3{
+	font-size: 30px;
+	font-weight: normal;
+	padding-bottom: 20px;
+	color: #666;
+	margin: 0;
+}
+.user-right h4{
+	font-size: 16px;
+	color: #333;
+	margin: 0;
+	margin-top: 30px;
+}
+.user-right .ln h4{
+	margin-top: 0;
+}
+.user-right ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ln{
+	margin-top: 15px;
+	font-size: 14px;
+	color: #333;
+}
+.user-right .lx li{
+	margin-top: 0;
+}
+.user-right .lx .kf{
+	margin-top: 15px;
+}
+
+/*隐私保护*/
+
+#privacy p{
+	font-size: 12px;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+	line-height: 21px;
+	margin-left: 45px;
+	color: #333;
+}
+#privacy h4{
+	font-size: 12px;
+	color: #333;
+}
+/*常见问题*/
+
+#question li{
+	padding: .2rem 0;
+	border-bottom: 1px solid #e2e2e2;
+	color: #333;
+}
+#question .last{
+	border-bottom:none;
+}
+/*合作专区*/
+
+#join .way>li{
+	padding: 40px 0;
+	/*margin: 0;*/
+	border-bottom: 1px solid #e2e2e2;
+}
+#join .way h4{
+	font-size: 18px;
+	margin: 0;
+}
+#join .way ol{
+	font-size: 16px;
+	color: #333;
+	padding-left: 18px;
+}
+/*人才招聘*/
+#recruit .tc{
+	margin-top: 30px;
+	border-width: 3px 0;
+	border-style: solid;
+	border-color: #eee9a2;
+	line-height: 1;
+	padding: 28px 0;
+	text-align: center;
+	font-size: 16px;
+	/*margin-bottom: 20px;*/
+}
+#recruit p{
+	margin-top: 30px;
+	color: #333;
+	font-size: 16px;
+}
+#recruit .job{
+	border: 1px solid #e2e2e2;
+	/*width: 628px;*/
+	line-height: 2;
+	padding: 50px 35px;
+	margin: 60px auto;
+}
+#recruit .job .acc{
+	font-size: 16px;
+	text-align: center;
+	/*color: #333;*/
+	font-weight: bold;
+}
+#recruit .job p{
+	font-size: 14px;
+	margin: 0;
+}
+/*.user-left .list .items{
+	display: block;
+}*/
+.user-left .list .items a{
+	color: #b28850;
+}
+.user-right>div{
+	display: none;
+}
+.center .item{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
